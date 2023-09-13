@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 
+            --Formulario--
+        </title>
+        <style> 
+        <!--En casacada-->
+            h1{
+                color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Forma de modificar estilo menos recomendada-->
+        <h1 style="color:aqua"> Mi formulario</h1>
+        <h1> Ahora usemos CSS</h1>
+            <!--GET POST    ruta hacia una app echa con otro lenguaje de programacion-->
+        <form method="post" action="">
+            <!-- Importante son los atributos-->
+            <!-- Etiquetas para colocar cuador para ingresar texto -->
+            <p>usuario:
+            <input type="text" name="key1" id="id1">
+            </p>
+            <!--Se puede repetir en name pero no el id en el mismo formulario-->
+            <p>password:
+            <input type="password" name="key2" id="id2">
+            </p>
+            <p>Oculto:
+            <input type="hidden" name="key2" id="id2" value="2023-2">
+            </p>
+            <p>
+                <textarea rows="5" cols="40">
+                </textarea>
+
+            </p>
+
+            <p>
+                <input type="radio" name="rb1" value="1">Cafe con Pan
+                <input type="radio" name="rb1" value="2">Pan con Agua
+                <input type="radio" name="rb1" value="3">Agua con Aire
+            </p>
+
+            <p>
+                <input type="checkbox" name="cb1" value="1"> Combo 1
+                <input type="checkbox" name="cb1" value="2" checked> Combo 2
+                <input type="checkbox" name="cb1" value="3"> Combo 3
+                <input type="checkbox" name="cb1" value="4"> Combo 4
+
+            </p>
+
+            <p>
+                <select name="lb1">
+                    <option value="1">Opcion 1</option>
+                    <option value="2">Opcion 2</option>
+                    <option value="3" selected>Opcion 3</option>
+                    <option value="4">Opcion 4</option>
+                </select>
+            </p>
+
+            <p>
+                <!--Solo permite el formato email mas no si existe ....@.... -->
+                Email:
+                <input type="email" name="correo"/>
+            </p>
+
+            <p>
+                <!--Solo permite el formato url mas no si existe http://... .com -->
+                URL:
+                <input type="url" name="web" />
+            </p>
+
+            <p>
+                Numeros:
+                <input type="number" name="n1" min="1" max="5"/>
+            </p>
+            <p>
+                Rango:
+                <input type="range" name="n2" min="1" max="100"/>
+            </p>
+            <p>
+                Fechas:
+                <input type="date" name="fecha1" value="2023-09-02"/>
+            </p>
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Limpiar" />
+        </form>
+        
+    </body>
+
+</html>
